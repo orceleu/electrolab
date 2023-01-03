@@ -5,7 +5,8 @@
     <item
         android:id="@+id/item_1"
         android:title="item1"
-        app:showAsAction="ifRoom"/>
+        app:showAsAction="ifRoom"
+        android:icon="@mipmap/ic_launcher"/>
     <item
         android:id="@+id/item_2"
         android:title="item2"

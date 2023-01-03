@@ -4,13 +4,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Calculator"
-    android:background="@color/teal_200">
+    android:background="#5A6380">
 
    <androidx.recyclerview.widget.RecyclerView
        android:id="@+id/rv_recyclerView"
        android:layout_width="match_parent"
        android:layout_height="match_parent"
-       tools:listitem="@layout/list_item"
+       tools:listitem="@layout/item_calculator"
        android:scrollbarAlwaysDrawVerticalTrack="true"
        android:scrollbars="vertical"
        />

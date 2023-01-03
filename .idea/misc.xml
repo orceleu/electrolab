@@ -3,13 +3,29 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Public/electrolab2/app/src/main/res/layout/activity_amp.xml" value="0.19947916666666668" />
+        <entry key="..\:/Users/Public/electrolab2/app/src/main/res/layout/activity_amp_b.xml" value="0.19947916666666668" />
+        <entry key="..\:/Users/Public/electrolab2/app/src/main/res/layout/activity_amp_c.xml" value="0.19947916666666668" />
+        <entry key="..\:/Users/Public/electrolab2/app/src/main/res/layout/activity_amp_d.xml" value="0.19947916666666668" />
+        <entry key="..\:/Users/Public/electrolab2/app/src/main/res/layout/activity_amp_mosfet.xml" value="0.19947916666666668" />
+        <entry key="..\:/Users/Public/electrolab2/app/src/main/res/layout/activity_colpitts_osc.xml" value="0.19947916666666668" />
+        <entry key="..\:/Users/Public/electrolab2/app/src/main/res/layout/activity_darlington.xml" value="0.19947916666666668" />
+        <entry key="..\:/Users/Public/electrolab2/app/src/main/res/layout/activity_differential_amp.xml" value="0.19947916666666668" />
+        <entry key="..\:/Users/Public/electrolab2/app/src/main/res/layout/activity_filtre_b.xml" value="0.19947916666666668" />
+        <entry key="..\:/Users/Public/electrolab2/app/src/main/res/layout/activity_filtre_h.xml" value="0.19947916666666668" />
         <entry key="..\:/Users/Public/electrolab2/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/Public/electrolab2/app/src/main/res/layout/activity_main2.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Public/electrolab2/app/src/main/res/layout/activity_multivibrator.xml" value="0.19947916666666668" />
+        <entry key="..\:/Users/Public/electrolab2/app/src/main/res/layout/activity_regulator_zener.xml" value="0.19947916666666668" />
         <entry key="..\:/Users/Public/electrolab2/app/src/main/res/layout/fragment_calculator.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/Public/electrolab2/app/src/main/res/layout/fragment_learning.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/Public/electrolab2/app/src/main/res/layout/fragment_schematic.xml" value="0.19010416666666666" />
         <entry key="..\:/Users/Public/electrolab2/app/src/main/res/layout/item.xml" value="0.203125" />
+        <entry key="..\:/Users/Public/electrolab2/app/src/main/res/layout/item_calculator.xml" value="0.19947916666666668" />
+        <entry key="..\:/Users/Public/electrolab2/app/src/main/res/layout/item_schematic.xml" value="0.1984375" />
         <entry key="..\:/Users/Public/electrolab2/app/src/main/res/layout/list_item.xml" value="0.33" />
+        <entry key="..\:/Users/Public/electrolab2/app/src/main/res/layout/nav_header.xml" value="0.1984375" />
+        <entry key="..\:/Users/Public/electrolab2/app/src/main/res/menu/nav_menu.xml" value="0.1984375" />
         <entry key="..\:/Users/Public/electrolab2/app/src/main/res/menu/option_menu.xml" value="0.20416666666666666" />
       </map>
     </option>

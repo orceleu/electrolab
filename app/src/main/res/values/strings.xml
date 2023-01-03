@@ -1,10 +1,30 @@
 <resources>
     <string name="app_name">electrolab</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment </string>
-    <string name="hello_blank_fragment2">Hello blank fragment 2 </string>
     <string name="exemple1">Hello blank fragment 1</string>
     <string name="exemple2">Hello blank fragment 2</string>
     <string name="exemple3">Hello blank fragment 3</string>
     <string name="exemple4">Hello blank fragment 4</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="text_darlington">Le montage en Darlington
+
+Le montage en Darlington est un type de circuit électronique
+ utilisé pour amplifier le courant électrique.
+ Il se compose de deux transistors montés en série,
+ de sorte que le courant qui passe à travers
+le premier transistor est amplifié par le second.
+Le montage en Darlington offre une très grande amplification de courant et est souvent utilisé dans
+les circuits de commande de moteur et de relais. Cependant, il a aussi un faible gain en tension et
+
+ une faible vitesse de commutation par rapport à d\'autres configurations d\'amplification de courant,
+comme le montage emetteur commun.</string>
+    <string name="text_differencial_amp">l\'ampli differentiel
+
+Un amplificateur différentiel est un circuit électronique qui amplifie la différence
+ de tension entre ses deux entrées, tout en rejetant les signaux communs aux deux entrées.
+Il est utilisé dans de nombreuses applications, notamment la mesure de faibles différences de tension,
+ la suppression de bruit et la réduction de l\'influence de perturbations externes sur les signaux de mesure.
+ Les amplificateurs différentiels sont souvent utilisés en combinaison avec des capteurs de mesure tels que les capteurs
+de température, de pression et de déplacement, et sont également utilisés dans les systèmes de commande et de régulation.
+</string>
 </resources>

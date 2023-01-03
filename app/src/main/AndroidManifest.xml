@@ -14,8 +14,45 @@
         android:theme="@style/Theme.Electrolab"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity2"
+            android:name=".MosfetAmp"
             android:exported="false" />
+        <activity
+            android:name=".RegulatorZener"
+            android:exported="false" />
+        <activity
+            android:name=".FiltreH"
+            android:exported="false" />
+        <activity
+            android:name=".FiltreB"
+            android:exported="false" />
+        <activity
+            android:name=".AmpD"
+            android:exported="false" />
+        <activity
+            android:name=".AmpC"
+            android:exported="false" />
+        <activity
+            android:name=".AmpB"
+            android:exported="false" />
+        <activity
+            android:name=".AmpA"
+            android:exported="false" />
+        <activity
+            android:name=".ColpittsOsc"
+            android:exported="false" />
+        <activity
+            android:name=".Multivibrator"
+            android:exported="false" />
+        <activity
+            android:name=".DifferentialAmp"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityDarlington"
+            android:exported="false" />
+        <activity
+            android:name=".Item1"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".MainActivity"
             android:exported="true">

@@ -1,19 +1,15 @@
 package com.eu.electrolab
 
-import android.app.Activity
-import android.content.Context
+
 import android.content.Intent
 import android.os.Bundle
 import android.view.*
 import androidx.fragment.app.Fragment
-import android.widget.AdapterView
 import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
-import androidx.fragment.app.FragmentActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import kotlin.coroutines.coroutineContext
 
 class Calculator : Fragment() {
 
@@ -24,7 +20,7 @@ class Calculator : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        var view = inflater.inflate(R.layout.fragment_calculator, container, false)
+        val view = inflater.inflate(R.layout.fragment_calculator, container, false)
 
         val recyclerView: RecyclerView = view.findViewById(R.id.rv_recyclerView)
 
@@ -72,7 +68,7 @@ class Calculator : Fragment() {
 
         override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
             val view =
-                LayoutInflater.from(parent.context).inflate(R.layout.list_item, parent, false)
+                LayoutInflater.from(parent.context).inflate(R.layout.item_calculator, parent, false)
             view.setOnClickListener(this)
             return ViewHolder(view)
         }
@@ -97,7 +93,7 @@ class Calculator : Fragment() {
             val context = view.context
             when (position) {
                 0 -> {
-                    val intent = Intent(context, MainActivity2::class.java)
+                    val intent = Intent(context, Item1::class.java)
                     context.startActivity(intent)
                 }
                 1 -> {}
