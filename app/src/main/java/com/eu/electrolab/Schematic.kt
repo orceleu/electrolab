@@ -37,7 +37,7 @@ class Schematic : Fragment() {
             "Paire de darlington",
             "amplificateur differentiel",
             "amplificateur a MOSFET",
-            "Multivibrateur",
+            "Multivibrateur astable",
             "Oscillateur Colpitts",
             "Amplificateur classe A",
             "Amplificateur classe B",
@@ -45,21 +45,25 @@ class Schematic : Fragment() {
             "Amplificateur classe D",
             "filtre passe bas",
             "filtre passe haut",
-            "regulateur de tension a zener"
+            "regulateur de tension a zener",
+            "multiplicateur de tension",
+            "regulateur 78xx"
         )
         private val image = listOf(
             R.drawable.darlington,
-           R.drawable.ic_launcher_background,
-            R.drawable.ic_launcher_background,
-            R.drawable.ic_launcher_background,
-            R.drawable.ic_launcher_background,
-            R.drawable.ic_launcher_background,
-            R.drawable.ic_launcher_background,
-            R.drawable.ic_launcher_background,
-            R.drawable.ic_launcher_background,
-            R.drawable.ic_launcher_background,
-            R.drawable.ic_launcher_background,
-            R.drawable.ic_launcher_background,
+            R.drawable.differencial,
+            R.drawable.mosfet,
+            R.drawable.multivibrateur,
+            R.drawable.colpitts,
+            R.drawable.amp_a,
+            R.drawable.amp_b,
+            R.drawable.amp_c,
+            R.drawable.amp_d,
+            R.drawable.filtre_b,
+            R.drawable.filtre_h,
+            R.drawable.reg_zener,
+            R.drawable.pont_diode,
+            R.drawable.regulateur_78xx
         )
 
         override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
@@ -84,8 +88,8 @@ class Schematic : Fragment() {
         override fun onClick(view: View) {
             val position = view.tag as Int
             val item = items[position]
-           Toast.makeText(view.context, "Clicked on item $position: $item", Toast.LENGTH_SHORT)
-                .show()
+           //Toast.makeText(view.context, "Clicked on item $position: $item", Toast.LENGTH_SHORT)
+             //   .show()
             val context = view.context
             when (position) {
                 0 -> { val intent = Intent(context, ActivityDarlington::class.java)
@@ -111,6 +115,10 @@ class Schematic : Fragment() {
                 10-> { val intent = Intent(context, FiltreH::class.java)
                     context.startActivity(intent)}
                 11-> { val intent = Intent(context, RegulatorZener::class.java)
+                    context.startActivity(intent)}
+                12-> { val intent = Intent(context, MultiplicateurDeTension::class.java)
+                    context.startActivity(intent)}
+                13-> { val intent = Intent(context, RegulateurDeTension::class.java)
                     context.startActivity(intent)}
 
             }

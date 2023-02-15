@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">electrolab</string>
+    <string name="text_darlington">Darlington assembly is a type of electronic circuit  used to amplify electric current.  It consists of two transistors connected in series,  so that the current passing through the first transistor is amplified by the second. Darlington mounting provides very high current amplification and is often used in motor and relay control circuits. However, it also has low voltage gain and   low switching speed compared to other current amplification configurations, like the common emitter assembly.</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
+</resources>

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:showIn="navigation_view">
 
 
@@ -12,4 +13,20 @@
         android:id="@+id/translante"
         android:title="Translante"
         android:icon="@drawable/ic_baseline_g_translate_24"/>
+    <item android:title="test">
+        <menu>
+            <item
+                android:id="@+id/parametre"
+                android:title="parametre"
+                android:icon="@drawable/ic_baseline_settings_24"/>
+        </menu>
+    </item>
+   <item android:title="communicate">
+       <menu>
+          <item
+              android:id="@+id/share"
+              android:icon="@drawable/ic_baseline_share_24"
+              android:title="share"/>
+       </menu>
+   </item>
 </menu>

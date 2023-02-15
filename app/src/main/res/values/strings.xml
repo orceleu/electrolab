@@ -1,12 +1,13 @@
 <resources>
     <string name="app_name">electrolab</string>
-    <string name="exemple1">Hello blank fragment 1</string>
-    <string name="exemple2">Hello blank fragment 2</string>
-    <string name="exemple3">Hello blank fragment 3</string>
-    <string name="exemple4">Hello blank fragment 4</string>
-    <string name="open">Open</string>
-    <string name="close">Close</string>
-    <string name="text_darlington">Le montage en Darlington
+    <string-array name="countries">
+        <item>France</item>
+        <item>usa</item>
+        <item>Chine</item>
+    </string-array>
+    <string name="open">Ouvrir</string>
+    <string name="close">Fermer</string>
+    <string name="text_darlington">
 
 Le montage en Darlington est un type de circuit électronique
  utilisé pour amplifier le courant électrique.
@@ -18,7 +19,7 @@ les circuits de commande de moteur et de relais. Cependant, il a aussi un faible
 
  une faible vitesse de commutation par rapport à d\'autres configurations d\'amplification de courant,
 comme le montage emetteur commun.</string>
-    <string name="text_differencial_amp">l\'ampli differentiel
+    <string name="text_differencial_amp" translatable="false">
 
 Un amplificateur différentiel est un circuit électronique qui amplifie la différence
  de tension entre ses deux entrées, tout en rejetant les signaux communs aux deux entrées.
@@ -27,4 +28,159 @@ Il est utilisé dans de nombreuses applications, notamment la mesure de faibles 
  Les amplificateurs différentiels sont souvent utilisés en combinaison avec des capteurs de mesure tels que les capteurs
 de température, de pression et de déplacement, et sont également utilisés dans les systèmes de commande et de régulation.
 </string>
+    <string name="text_filtre_b" translatable="false">
+
+Les filtres passe-bas sont des circuits électroniques qui permettent de passer les
+ signaux de fréquences inférieures à une certaine fréquence de coupure, tout en atténuant
+les signaux de fréquences supérieures. Ils sont utilisés dans de nombreuses applications pour
+séparer les différentes parties d\'un signal mixte ou pour supprimer le bruit haute fréquence d\'un signal.
+ Il existe plusieurs types de filtres passe-bas, tels que les filtres passe-bas RC, RL et RLC, qui utilisent
+ des combinaisons de résistances, de inductances et de capacités pour créer une fréquence de coupure définie.
+ Les filtres passe-bas peuvent être utilisés seuls ou en combinaison avec d\'autres types de filtres,
+ tels que les filtres passe-haut, pour créer des filtres passe-bande ou passe-tout.
+
+</string>
+    <string name="text_filtre_b_calc" translatable="false">
+
+La fréquence de coupure d\'un filtre passe-bas est la fréquence à laquelle le gain du filtre est attenué de 3 dB (demi de la puissance) par rapport à sa valeur de gain à basse fréquence.
+        La fréquence de coupure peut être calculée à l\'aide de la formule suivante :
+
+f_c = 1 / (2pRC)
+
+où f_c est la fréquence de coupure en hertz, R est la résistance en ohms et C est la capacité en farads. Cette formule s\'applique aux filtres passe-bas RC simples, qui utilisent uniquement une résistance et une capacité pour créer la fréquence de coupure.
+        Pour les filtres passe-bas RLC, qui utilisent une résistance,
+        une inductance et une capacité, la fréquence de coupure peut être calculée à l\'aide de la formule suivante :
+
+f_c = 1 / (2p v(LC))
+
+où L est l\'inductance en henries.</string>
+    <string name="oscillateur_colpitts" translatable="false">L\'oscillateur Colpitts est un circuit oscillant qui utilise deux condensateurs et une inductance pour créer une rétroaction positive en boucle. Il a été développé par Edwin. H. Colpitts dans les années 1920.
+Le circuit Colpitts est composé d\'un amplificateur opérationnel, d\'une inductance et de deux condensateurs. L\'amplificateur opérationnel sert à amplifier le signal tout en maintenant une phase fixe entre l\'entrée et la sortie.
+        Les deux condensateurs sont connectés en parallèle et forment une configuration de rétroaction de phase. L\'inductance est connectée en série avec l\'un des condensateurs et forme une rétroaction de gain.
+Lorsque le circuit est alimenté, le signal de sortie de l\'amplificateur opérationnel est envoyé à travers l\'inductance et un des condensateurs. Il est alors renvoyé à l\'entrée de l\'amplificateur opérationnel via l\'autre condensateur. Cette rétroaction en boucle maintient le circuit en oscillation à une fréquence déterminée par la valeur des composants du circuit.
+L\'oscillateur Colpitts est utilisé dans une variété d\'applications, notamment la génération de signaux radio et la synthèse de fréquences.
+</string>
+    <string name="ne555" translatable="false">
+    Le NE555 est un circuit intégré monolithique utilisé comme oscillateur et temporisateur.
+    Il a été conçu par Hans R. Camenzind de chez Signetics en 1970 et il est devenu l\'un des
+    circuits intégrés les plus populaires de l\'histoire de l\'électronique.
+
+    Le NE555 est un oscillateur monostable qui peut être utilisé pour générer des impulsions
+    à la demande ou pour temporiser des durées précises. Il peut également être utilisé comme
+    oscillateur astable pour générer des signaux à bascule périodiques à une fréquence donnée. Le NE555 est
+    facile à utiliser et peut être alimenté avec une tension allant de 4,5 à 16 volts.
+
+    La fréquence de sortie de l\'oscillateur NE555 peut être calculée à l\'aide de la formule suivante :
+
+    f = 1 / (0,693 x (R1 + 2 x R2) x C)
+
+    où f est la fréquence de sortie en hertz, R1 et R2 sont les résistances en ohms
+    et C est la capacité en farads. Cette formule s\'applique aux oscillateurs NE555
+    configurés en mode astable, c\'est-à-dire qui génèrent des signaux à bascule périodiques de manière autonome.
+
+    Pour les oscillateurs NE555 configurés en mode monostable,
+    c\'est-à-dire qui génèrent une impulsion à la demande, la durée de l\'impulsion peut être calculée à l\'aide de
+    la formule suivante :
+
+    T = 0,693 x (R1 + R2) x C
+
+    où T est la durée de l\'impulsion en secondes.
+
+    Il est important de noter que ces formules ne sont valables que
+    pour les oscillateurs NE555 configurés de manière standard
+    . Si des réseaux de filtrage ou d\'autres composants sont utilisés pour influencer la fréquence ou la durée de sortie de l\'oscillateur, il peut être nécessaire de modifier les formules pour tenir compte de ces effets.
+
+    Le NE555 est utilisé dans de nombreuses applications, notamment la génération de signaux de test, la synchronisation de différents circuits, la temporisation de processus et la génération de fréquences porteuses pour la transmission de signaux radio.
+        Il est également souvent utilisé en conjonction avec des amplificateurs
+    pour générer des signaux de puissance à haute fréquence pour l\'alimentation d\'équipements électroniques tels que les haut-parleurs et les moteurs.
+    </string>
+    <string name="amplificateur_de_classe_a" translatable="false">
+    Les amplificateurs de classe A sont des amplificateurs de puissance qui fonctionnent en conduisant le signal de
+    sortie de manière continue pendant toute la période de l\'onde porteuse. Cela signifie que le courant de sortie de
+    l\'amplificateur est présent même quand le signal d\'entrée est nul,
+    ce qui permet d\'obtenir une linéarité et une distorsion faibles mais entraîne également un rendement énergétique
+    relativement faible.
+
+    Les amplificateurs de classe A sont souvent utilisés dans les applications où la linéarité et la qualité
+    du signal sont cruciales, telles que les amplificateurs de précision et les amplificateurs de puissance audio.
+    Ils sont également utilisés dans les amplificateurs de puissance RF pour la transmission de signaux radio,
+    car ils permettent d\'obtenir une faible distorsion du signal modulé.
+
+    Les amplificateurs de classe A peuvent être conçus de différentes manières, en utilisant des tubes à vide,
+    des transistors bipolaires ou des transistors à effet de champ. Chacun de ces types d\'amplificateurs a ses
+    propres avantages et inconvénients en termes de performance et de coût.
+  </string>
+    <string name="amplificateur_de_classe_c" translatable="false">
+    Les amplificateurs de classe C sont des amplificateurs de puissance qui
+fonctionnent en conduisant le signal de sortie de manière discontinue pendant
+moins de la moitié de la période de l\'onde porteuse. Cela permet d\'obtenir un rendement énergétique élevé,
+ mais entraîne également une distorsion importante du signal de sortie.
+
+Les amplificateurs de classe C sont principalement utilisés dans les applications de transmission de signaux radio
+ à haute fréquence, où la distorsion du signal est moins importante que le rendement énergétique.
+Ils sont également utilisés dans les amplificateurs de puissance à commutation pour alimenter des moteurs
+ et d\'autres charges inductives.
+
+Les amplificateurs de classe C peuvent être conçus de différentes manières, en utilisant des tubes à vide,
+des transistors bipolaires ou des transistors à effet de champ. Ils peuvent être ajustés pour générer des
+fréquences de sortie précises en utilisant des réseaux de filtrage et de contrôle de fréquence. Cependant,
+ ils nécessitent souvent
+l\'utilisation de filtres de sortie pour réduire la distorsion du signal de sortie.
+
+  </string>
+    <string name="amplificateur_de_classe_b" translatable="false">
+    Les amplificateurs de classe B sont des amplificateurs de puissance qui fonctionnent en conduisant le
+signal de sortie de manière discontinue, c\'est-à-dire que le courant de sortie de l\'amplificateur n\'est
+ présent que pendant la moitié de la période de l\'onde porteuse.
+ Cela permet d\'obtenir un rendement énergétique relativement élevé, mais entraîne également
+une distorsion plus élevée que les amplificateurs de classe A.
+
+Les amplificateurs de classe B sont souvent utilisés dans les applications où le
+ rendement énergétique est important, telles que les amplificateurs de puissance RF pour
+ la transmission de signaux radio et les amplificateurs de puissance audio de haute puissance.
+Ils sont également utilisés dans les amplificateurs de puissance à commutation pour alimenter
+ des moteurs et d\'autres charges inductives.
+
+Les amplificateurs de classe B peuvent être conçus de différentes manières,
+en utilisant des tubes à vide, des transistors bipolaires ou des transistors à effet de champ.
+ Chacun de ces types d\'amplificateurs a ses propres avantages et inconvénients en termes de performance
+
+  </string>
+    <string name="amplificateur_de_classe_d" translatable="false">
+   Les amplificateurs de classe D sont des amplificateurs de puissance qui fonctionnent en modulant
+le signal de sortie en largeur d\'impulsion (PWM, pulse width modulation). Cela permet d\'obtenir
+ un rendement énergétique très élevé, proche de 100 %, car le courant de sortie de l\'amplificateur est présent
+ uniquement pendant les impulsions PWM et n\'est pas présent en continu. Cependant, la conversion du
+ signal modulé en un signal de sortie continu peut entraîner une distorsion du signal et nécessiter
+l\'utilisation de filtres de sortie pour réduire cette distorsion.
+
+Les amplificateurs de classe D sont souvent utilisés dans les applications où le rendement énergétique est important,
+ exepter les amplificateurs de puissance RF pour la transmission de signaux radio a cause des distorsion mais convient pour les amplificateurs de puissance audio de haute puissance. Ils sont également utilisés dans les amplificateurs de puissance à commutation pour alimenter des moteurs et d\'autres charges inductives.
+
+Les amplificateurs de classe D peuvent être conçus de différentes manières, en utilisant des transistors bipolaires
+ou des transistors à effet de champ. Ils peuvent être ajustés pour générer des fréquences de sortie précises en
+utilisant des réseaux de filtrage et de contrôle de fréquence.
+
+  </string>
+    <string name="filtre_h" translatable="false">
+   Les filtres passe-haut sont des circuits électroniques qui permettent de passer
+ les signaux de fréquences supérieures à une certaine fréquence de coupure,
+tout en atténuant les signaux de fréquences inférieures. Ils sont utilisés dans de
+nombreuses applications pour séparer les différentes parties d\'un signal mixte ou pour supprimer
+ le bruit basse fréquence d\'un signal. Il existe plusieurs types de filtres passe-haut,
+tels que les filtres passe-haut RC, RL et RLC, qui utilisent des combinaisons de résistances,
+ de inductances et de capacités pour créer une fréquence de coupure définie. Les filtres passe-haut peuvent
+ être utilisés seuls ou en combinaison avec d\'autres types de filtres,
+
+La fréquence de coupure d\'un filtre passe-haut est la fréquence à laquelle le gain du filtre est attenué de 3 dB (demi de la puissance) par rapport à sa valeur de gain à haute fréquence. La fréquence de coupure peut être calculée à l\'aide de la formule suivante :
+
+f_c = 1 / (2pRC)
+
+où f_c est la fréquence de coupure en hertz, R est la résistance en ohms et C est la capacité en farads. Cette formule s\'applique aux filtres passe-haut RC simples, qui utilisent uniquement une résistance et une capacité pour créer la fréquence de coupure. Pour les filtres passe-haut RLC, qui utilisent une résistance, une inductance et une capacité, la fréquence de coupure peut être calculée à l\'aide de la formule suivante :
+
+f_c = v(1 / (LC))
+
+où L est l\'inductance en henries.
+
+  </string>
 </resources>
